@@ -1,2 +1,2 @@
 # gabby-site
-personal website for Gabby Defonso
+Personal website for Gabby Defonso
