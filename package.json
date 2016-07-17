@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/amichels/gabby-site/issues"
   },
-  "homepage": "https://github.com/amichels/gabby-site#readme"
+  "homepage": "https://github.com/amichels/gabby-site#readme",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-sass": "latest"
+  }
 }
