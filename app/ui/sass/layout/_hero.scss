@@ -1,0 +1,23 @@
+.hero {
+	width: 100vw;
+	height: 100vw;
+	background-color: $pink;
+	&__nav {
+		left: 0;
+		@extend %vertical-align;
+		&__link {
+			display: block;
+			font-size: 1.5em;
+			color: $black;
+			padding: .3em 1em;
+  		margin-bottom: .5em;
+			text-decoration: none;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&--main {
+				background-color: $white;
+			}
+		}
+	}
+}
