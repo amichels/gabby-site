@@ -1,16 +1,19 @@
-.hero__nav {
+.hero__nav, .work__close-bt, .work__main__caption__text {
   position: absolute;
   top: 50%;
   transform: translateY(-50%); }
 
+body, .hero, .work {
+  width: 100vw;
+  height: 100vh; }
+
 body {
   font-family: 'Lato', sans-serif;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
 
 .hero {
-  width: 100vw;
-  height: 100vw;
   background-color: #dc67b3; }
   .hero__nav {
     left: 0; }
@@ -25,3 +28,71 @@ body {
         margin-bottom: 0; }
       .hero__nav__link--main {
         background-color: #fff; }
+
+.work {
+  position: absolute;
+  top: 100vw;
+  transition: top 2s;
+  box-sizing: border-box; }
+  .work:target {
+    top: 0; }
+  .work__wrap {
+    background-color: #fff;
+    position: absolute;
+    top: .5em;
+    bottom: .5em;
+    left: .5em;
+    right: .5em;
+    padding: 1em 0; }
+  .work__col {
+    position: absolute;
+    top: 1em;
+    bottom: 1em;
+    box-sizing: border-box; }
+  .work__aside {
+    width: 25%;
+    left: 0; }
+  .work__header {
+    font-size: 1.8em;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0; }
+  .work__close-bt {
+    font-size: 3em;
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-weight: 300; }
+  .work__main {
+    width: 75%;
+    right: 0;
+    overflow: scroll;
+    bottom: 0;
+    padding: 0 1em 1em;
+    column-width: 20vw;
+    column-gap: 1em; }
+    .work__main__figure {
+      width: 100%;
+      position: relative;
+      column-break-inside: avoid;
+      margin: 0 0 1em 0;
+      cursor: pointer; }
+      .work__main__figure:hover .work__main__caption {
+        opacity: 1;
+        background-color: rgba(220, 103, 179, 0.5); }
+    .work__main__img {
+      width: 100%; }
+    .work__main__caption {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s; }
+      .work__main__caption__text {
+        text-align: center;
+        width: 100%; }

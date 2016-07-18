@@ -18,7 +18,8 @@
   "homepage": "https://github.com/amichels/gabby-site#readme",
   "devDependencies": {
     "gulp": "latest",
-    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-autoprefixer": "latest",
+    "gulp-nunjucks-render": "latest",
     "gulp-sass": "latest"
   }
 }

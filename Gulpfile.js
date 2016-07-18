@@ -1,10 +1,12 @@
 var gulp = require('gulp'),
 		sass = require('gulp-sass'),
+		autoprefixer = require('gulp-autoprefixer'),
 		nunjucksRender = require('gulp-nunjucks-render');
 
 gulp.task('styles', function() {
     gulp.src('app/ui/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer())
         .pipe(gulp.dest('./app/ui/css/'));
 });
 

@@ -1,6 +1,5 @@
 .hero {
-	width: 100vw;
-	height: 100vw;
+	@extend %full-page;
 	background-color: $pink;
 	&__nav {
 		left: 0;
