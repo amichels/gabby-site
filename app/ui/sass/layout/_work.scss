@@ -1,6 +1,6 @@
 .work {
 	position: absolute;
-	top: 100vw;
+	top: -100vw;
 	transition: top 2s;
 	box-sizing: border-box;
 	@extend %full-page;
@@ -49,7 +49,7 @@
 		overflow: scroll;
 		bottom: 0;
 		padding: 0 1em 1em;
-		column-width: 20vw;
+		column-width: 16vw;
 		column-gap: 1em;
 		&__figure {
 			width: 100%;
@@ -66,6 +66,7 @@
 		}
 		&__img {
 			width: 100%;
+			display: block;
 		}
 		&__caption {
 			position: absolute;
