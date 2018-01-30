@@ -1,4 +1,6 @@
 @import 'global';
-@import 'hero';
-@import 'work';
-@import 'piece';
+@import 'sidebar';
+@import 'portfolio';
+
+// baguettebox sass
+@import 'node_modules/baguettebox.js/src/baguetteBox.scss';
